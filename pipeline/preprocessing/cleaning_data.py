@@ -208,8 +208,8 @@ def preprocess(new_house_df):
     # new_house_df = df format of new_house
     
     # deal with the zipcode (convert zipcode to province)
-    prop_province = define_province(new_house_df["zip-code"].values[0])
-    new_house_df["province"] = prop_province
+    #prop_province = define_province(new_house_df["zip-code"].values[0])
+    #new_house_df["province"] = prop_province
 
     
     # deal with the columns (one-hot-encoder)

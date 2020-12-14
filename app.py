@@ -6,9 +6,9 @@ from pipeline.predict.prediction import predict
 from pipeline.preprocessing.cleaning_data_vers02 import preprocess
 import pipeline.model as model
 from flask_cors import CORS
-CORS(api-house-pricepred, resources=r'/*', allow_headers='Content-Type')
-app = Flask(__name__)
 
+app = Flask(__name__)
+CORS(app, resources=r'/*', allow_headers='Content-Type')
 
 @app.route("/", methods=["GET"])
 def home():

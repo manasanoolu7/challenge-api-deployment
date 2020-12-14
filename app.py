@@ -8,7 +8,7 @@ import pipeline.model as model
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources=r'/*', allow_headers='Content-Type')
+
 
 @app.route("/", methods=["GET"])
 def home():
@@ -52,4 +52,4 @@ def predict_api():
 
 
 if __name__ == '__main__':
-    app.run(post=5000,host='0.0.0.0')
+    app.run(post=5000)

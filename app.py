@@ -5,7 +5,8 @@ import pickle
 from pipeline.predict.prediction import predict
 from pipeline.preprocessing.cleaning_data_vers02 import preprocess
 import pipeline.model as model
-
+from flask_cors import CORS
+CORS(app, resources=r'/*', allow_headers='Content-Type')
 app = Flask(__name__)
 
 
